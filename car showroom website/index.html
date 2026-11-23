@@ -1,1 +1,198 @@
-car showroom website using html and css
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Motors - Car Showroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">ELITE<span>MOTORS</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#cars">Our Cars</a>
+            <a href="#features">Features</a>
+            <a href="#compare">Compare</a>
+            <a href="#testdrive">Test Drive</a>
+        </nav>
+        <a href="#testdrive" class="nav-btn">Book Now</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">DRIVE YOUR DREAM</p>
+            <h1>Experience The<br><span>Power Of Luxury</span></h1>
+            <p>Discover premium cars designed for comfort,
+            performance and unforgettable journeys.</p>
+            <a href="#cars" class="btn">Explore Cars</a>
+        </div>
+    </section>
+
+    <!-- Car Collection -->
+    <section class="cars" id="cars">
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+            <h2>Explore Our Premium Cars</h2>
+        </div>
+
+        <div class="car-container">
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800" alt="BMW Car">
+                <div class="car-info">
+                    <h3>BMW 3 Series</h3>
+                    <p class="price">₹72.90 Lakh</p>
+                    <div class="specs">
+                        <span>⚡ 255 HP</span>
+                        <span>⛽ Petrol</span>
+                        <span>⚙ Automatic</span>
+                    </div>
+                    <p>Luxury, technology and outstanding performance.</p>
+                    <a href="#testdrive" class="btn">Book Test Drive</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800" alt="Mercedes Car">
+                <div class="car-info">
+                    <h3>Mercedes-Benz</h3>
+                    <p class="price">₹65.00 Lakh</p>
+                    <div class="specs">
+                        <span>⚡ 201 HP</span>
+                        <span>⛽ Petrol</span>
+                        <span>⚙ Automatic</span>
+                    </div>
+                    <p>Elegant design with world-class comfort.</p>
+                    <a href="#testdrive" class="btn">Book Test Drive</a>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Porsche Car">
+                <div class="car-info">
+                    <h3>Porsche 911</h3>
+                    <p class="price">₹2.00 Crore</p>
+                    <div class="specs">
+                        <span>⚡ 379 HP</span>
+                        <span>⛽ Petrol</span>
+                        <span>⚙ Automatic</span>
+                    </div>
+                    <p>Pure sports performance with iconic styling.</p>
+                    <a href="#testdrive" class="btn">Book Test Drive</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="section-heading">
+            <p>WHY CHOOSE US</p>
+            <h2>Premium Experience</h2>
+        </div>
+
+        <div class="feature-container">
+            <div class="feature-box">
+                <h3>🏆 Premium Quality</h3>
+                <p>Carefully selected luxury vehicles with excellent quality.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🔧 Best Service</h3>
+                <p>Professional support and maintenance assistance.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>💳 Easy Finance</h3>
+                <p>Flexible financing options for your dream car.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🚘 Test Drive</h3>
+                <p>Experience your favourite car before purchasing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="compare" id="compare">
+        <div class="section-heading">
+            <p>SMART CHOICE</p>
+            <h2>Compare Our Cars</h2>
+        </div>
+
+        <table>
+            <tr>
+                <th>Specifications</th>
+                <th>BMW 3 Series</th>
+                <th>Mercedes-Benz</th>
+                <th>Porsche 911</th>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>₹72.90 Lakh</td>
+                <td>₹65.00 Lakh</td>
+                <td>₹2.00 Crore</td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>255 HP</td>
+                <td>201 HP</td>
+                <td>379 HP</td>
+            </tr>
+            <tr>
+                <td>Fuel</td>
+                <td>Petrol</td>
+                <td>Petrol</td>
+                <td>Petrol</td>
+            </tr>
+            <tr>
+                <td>Transmission</td>
+                <td>Automatic</td>
+                <td>Automatic</td>
+                <td>Automatic</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Test Drive -->
+    <section class="testdrive" id="testdrive">
+        <div class="section-heading">
+            <p>BOOK YOUR EXPERIENCE</p>
+            <h2>Schedule A Test Drive</h2>
+            <p>Take the first step towards owning your dream car.</p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Your Full Name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Select Your Car</option>
+                <option>BMW 3 Series</option>
+                <option>Mercedes-Benz</option>
+                <option>Porsche 911</option>
+            </select>
+
+            <input type="date" required>
+
+            <button type="submit">Book Test Drive</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>ELITE MOTORS</h2>
+        <p>Your Dream Car. Our Passion.</p>
+        <p>© 2026 Elite Motors. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
